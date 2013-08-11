@@ -1,0 +1,28 @@
+.partial--example1 {
+  width: 628px;
+  height: 100px;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: navajowhite;
+  list-style-type: none; }
+
+.partial--example1__item {
+  float: left;
+  width: 157px;
+  height: 100px;
+  background: lightsteelblue; }
+
+.partial--example2 {
+  width: 628px;
+  height: 100px;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: navajowhite;
+  list-style-type: none; }
+
+/* line 16, /Users/casey/src/blog-playground/source/css/app.scss */
+.partial--example2__item {
+  float: left;
+  width: 125.6px;
+  height: 100px;
+  background: lightsteelblue; }
