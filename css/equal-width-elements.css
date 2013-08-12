@@ -20,9 +20,25 @@
   background: navajowhite;
   list-style-type: none; }
 
-/* line 16, /Users/casey/src/blog-playground/source/css/app.scss */
 .partial--example2__item {
   float: left;
   width: 125.6px;
   height: 100px;
+  background: lightsteelblue; }
+
+.partial--example3 {
+  width: 648px;
+  height: 100px;
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: navajowhite;
+  list-style-type: none; }
+
+.partial--example3__item {
+  float: left;
+  width: 109px;
+  height: 80px;
+  margin: 10px;
   background: lightsteelblue; }
