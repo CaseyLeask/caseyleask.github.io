@@ -17,6 +17,7 @@ module.exports = function (grunt) {
         // configurable paths
         yeoman: {
             app: 'app',
+            tmp: '.tmp',
             dist: 'dist'
         },
         watch: {
@@ -34,8 +35,8 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= yeoman.app %>/*.html',
-                    '.tmp/styles/{,*/}*.css',
-                    '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
+                    '<%= yeoman.tmp %>/styles/{,*/}*.css',
+                    '{<%= yeoman.tmp %>,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
             }
@@ -51,7 +52,7 @@ module.exports = function (grunt) {
                 options: {
                     open: true,
                     base: [
-                        '.tmp',
+                        '<%= yeoman.tmp %>',
                         '<%= yeoman.app %>'
                     ]
                 }
@@ -59,7 +60,7 @@ module.exports = function (grunt) {
             test: {
                 options: {
                     base: [
-                        '.tmp',
+                        '<%= yeoman.tmp %>',
                         'test',
                         '<%= yeoman.app %>'
                     ]
@@ -77,13 +78,13 @@ module.exports = function (grunt) {
                 files: [{
                     dot: true,
                     src: [
-                        '.tmp',
+                        '<%= yeoman.tmp %>',
                         '<%= yeoman.dist %>/*',
                         '!<%= yeoman.dist %>/.git*'
                     ]
                 }]
             },
-            server: '.tmp'
+            server: '<%= yeoman.tmp %>'
         },
         jshint: {
             options: {
@@ -107,8 +108,8 @@ module.exports = function (grunt) {
         compass: {
             options: {
                 sassDir: '<%= yeoman.app %>/styles',
-                cssDir: '.tmp/styles',
-                generatedImagesDir: '.tmp/images/generated',
+                cssDir: '<%= yeoman.tmp %>/styles',
+                generatedImagesDir: '<%= yeoman.tmp %>/images/generated',
                 imagesDir: '<%= yeoman.app %>/images',
                 javascriptsDir: '<%= yeoman.app %>/scripts',
                 fontsDir: '<%= yeoman.app %>/styles/fonts',
@@ -137,9 +138,9 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '.tmp/styles/',
+                    cwd: '<%= yeoman.tmp %>/styles/',
                     src: '{,*/}*.css',
-                    dest: '.tmp/styles/'
+                    dest: '<%= yeoman.tmp %>/styles/'
                 }]
             }
         },
@@ -217,12 +218,12 @@ module.exports = function (grunt) {
             // blocks for your CSS. By default, the Usemin block from your
             // `index.html` will take care of minification, e.g.
             //
-            //     <!-- build:css({.tmp,app}) styles/main.css -->
+            //     <!-- build:css({<%= yeoman.tmp %>,app}) styles/main.css -->
             //
             // dist: {
             //     files: {
             //         '<%= yeoman.dist %>/styles/main.css': [
-            //             '.tmp/styles/{,*/}*.css',
+            //             '<%= yeoman.tmp %>/styles/{,*/}*.css',
             //             '<%= yeoman.app %>/styles/{,*/}*.css'
             //         ]
             //     }
@@ -271,7 +272,7 @@ module.exports = function (grunt) {
                 expand: true,
                 dot: true,
                 cwd: '<%= yeoman.app %>/styles',
-                dest: '.tmp/styles/',
+                dest: '<%= yeoman.tmp %>/styles/',
                 src: '{,*/}*.css'
             }
         },
