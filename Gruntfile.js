@@ -319,7 +319,7 @@ module.exports = function (grunt) {
             pages: {
                 options: {
                     remote: 'https://github.com/CaseyLeask/caseyleask.github.io.git',
-                    branch: 'build'
+                    branch: 'master'
                 }
             },
         }
