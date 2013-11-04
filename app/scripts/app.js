@@ -1,5 +1,5 @@
 /*global define */
-define(['variadic'], function (variadic) {
+define(['variadic', 'call-left'], function (variadic, callLeft) {
     'use strict';
 
     function unary (first) {
@@ -21,6 +21,13 @@ define(['variadic'], function (variadic) {
     //=> [ 'why', 'hello' ]
     //=> [ 'why', [ 'hello', 'there' ] ]
     //=> [ 'why', [ ] ]
+
+    require(['mapper', 'squarer'], function( mapper, squarer ) {
+      console.log(mapper(function (x) { return x * x }, 1, 2, 3),
+                  squarer(1, 2, 3));
+      //=> [1, 4, 9]
+      //=> [1, 4, 9]
+    });
 
     return 'App is finished!';
 });
