@@ -365,4 +365,8 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
+    grunt.registerTask('deploy', [
+        'default',
+        'buildcontrol'
+    ]);
 };
