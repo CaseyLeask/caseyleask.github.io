@@ -1,0 +1,31 @@
+{
+  "name": "caseyleask.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "webpack && cp ./src/index.html ./dist",
+    "test": "echo 'none yet'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CaseyLeask/caseyleask.github.io.git"
+  },
+  "author": "Casey Leask",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CaseyLeask/caseyleask.github.io/issues"
+  },
+  "homepage": "https://github.com/CaseyLeask/caseyleask.github.io",
+  "devDependencies": {
+    "babel-core": "^5.5.4",
+    "babel-loader": "^5.1.4",
+    "css-loader": "^0.14.4",
+    "node-libs-browser": "^0.5.2",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.9.10"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.5.4"
+  }
+}
