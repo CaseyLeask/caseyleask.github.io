@@ -1,9 +1,11 @@
 import React from 'react';
 import { Route } from 'react-router';
-import Content from './components/Content';
+import Home from './components/Home';
 
 export default (
-    <Route handler={Content} path="/">
+    <Route path="/" handler={Home}>
+      <Route path="b/" Handler={Home} />
+      <Route path="c/" Handler={Home} />
     </Route>
 );
 

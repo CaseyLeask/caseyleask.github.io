@@ -4,11 +4,22 @@ import React from 'react';
 import Router from 'react-router';
 
 import routes from './src/routes';
+import interrogate from './src/util/interrogate-react-router';
 
 var indexHTML = fs.readFileSync(__dirname + '/src/index.html').toString();
 
-Router.run(routes, function (Root) {
-  // whenever the url changes, this callback is called again
-  var pageHTML = indexHTML.replace(/¡HTML!/, React.renderToString(<Root />));
-  fs.writeFileSync(__dirname + '/dist/index.html', pageHTML);
+var paths = interrogate(routes);
+
+paths.forEach(function(path) {
+  Router.run(routes, path, function (Root, State) {
+    var path = State.path;
+    var pageHTML = indexHTML.replace(/¡HTML!/, React.renderToString(<Root />));
+
+    fs.mkdir(__dirname + '/dist' + path, function(err) {
+      if (err && err.code !== 'EEXIST') {
+        throw err;
+      }
+      fs.writeFile(__dirname + '/dist' + path + 'index.html', pageHTML);
+    });
+  });
 });
