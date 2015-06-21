@@ -1,0 +1,22 @@
+body {
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 200;
+}
+
+a {
+  color: hsl(200, 50%, 50%);
+}
+
+a.active {
+  color: hsl(20, 50%, 50%);
+}
+
+.loading {
+  opacity: 0.5;
+}
+
+.Home {
+  display: block;
+  margin: 0 auto;
+  max-width: 40em;
+}
