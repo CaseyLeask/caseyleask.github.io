@@ -1,13 +1,20 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import './index.css'
+
+import profile from "./profile.jpeg";
+
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
+  <main>
+    <img src={ profile }
+         alt="Profile Picture" />
+    <h1>Come work with me</h1>
+    <p>Email: Firstname and Lastname at gmail dot com.</p>
+    <p>Twitter: <a href="https://twitter.com/CaseyLeask">@CaseyLeask</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/casey-leask-099aa922/">https://www.linkedin.com/in/casey-leask-099aa922/</a></p>
+    <p>I’m looking for a new role as CTO or VP/Head of Engineering (or COO), or similar, remote or in Melbourne.</p>
+  </main>
 )
 
 export default IndexPage
