@@ -55,7 +55,6 @@ const IndexPage = () => (
 
       <li>
         <h3>Work in the spirit of agile</h3>
-
         <p><a href="agilemanifesto.org">agilemanifesto.org</a></p>
       </li>
 
@@ -106,26 +105,12 @@ const IndexPage = () => (
       </li>
 
       <li>
-        <h3>Assign all costs to a Cost Centre, wherever possible</h3>
-        <p>It increases accountability and awareness of spend in a business</p>
-      </li>
-
-      <li>
         <h3>Understand the 12 Factor Model</h3>
         <p><a href="https://12factor.net/">https://12factor.net/</a></p>
       </li>
 
       <li>
         <h3>Understand the Fallacies of distributed computing, and how it relates to what you build</h3>
-        <p>The fallacies are:</p>
-        <p>The network is reliable.</p>
-        <p>Latency is zero.</p>
-        <p>Bandwidth is infinite.</p>
-        <p>The network is secure.</p>
-        <p>Topology doesn't change.</p>
-        <p>There is one administrator.</p>
-        <p>Transport cost is zero.</p>
-        <p>The network is homogeneous.</p>
         <p><a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing">https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing</a></p>
       </li>
 
@@ -140,15 +125,12 @@ const IndexPage = () => (
       </li>
 
       <li>
-        <h3>Favour Contract Testing over Integration Testing</h3>
+        <h3>Understand your testing options</h3>
+        <p><a href="https://medium.com/@copyconstruct/testing-microservices-the-sane-way-9bb31d158c16">https://medium.com/@copyconstruct/testing-microservices-the-sane-way-9bb31d158c16</a></p>
+        <p>For example, personally, I favour Contract Testing over Integration Testing.</p>
         <p>With a complex system, production cannot be accurately reproduced.</p>
         <p>When relying on Integration testing, every discrepancy from production to the testing environment is an untested venue for failure.</p>
         <p>Contract Testing provides better coverage, see <a href="https://www.destroyallsoftware.com/talks/boundaries">https://www.destroyallsoftware.com/talks/boundaries</a> and <a href="http://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam">http://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam</a></p>
-      </li>
-
-      <li>
-        <h3>Understand your testing options</h3>
-        <p><a href="https://medium.com/@copyconstruct/testing-microservices-the-sane-way-9bb31d158c16">https://medium.com/@copyconstruct/testing-microservices-the-sane-way-9bb31d158c16</a></p>
       </li>
 
       <li>
@@ -157,8 +139,9 @@ const IndexPage = () => (
       </li>
 
       <li>
-        <h3>Exploit the native strengths of your platform (AWS, Azure, GCP, On-Premise)</h3>
-        <p>An understanding that we should be exploiting capabilities where it provides long-term benefits</p>
+        <h3>Exploit native strengths and avoid generalising to irrelevant areas</h3>
+        <p>Favour programming languages native to the operating system</p>
+        <p>Use Cloud tooling specific to the platform unless you have a very compelling reason otherwise</p>
       </li>
 
       <li>
@@ -167,13 +150,13 @@ const IndexPage = () => (
       </li>
 
       <li>
-        <h3>Roll Forward</h3>
-        <p>If you're building fast, reliable deployment mechanisms, rolling forward is the known, working path of deployment. Rollback mechanisms are another venue for failure that's rarely tested.</p>
+        <h3>Test your backups</h3>
+        <p>A backup isn't working until you can prove that it works. Think of the consequences of a backup failing, and plan for this as well.</p>
       </li>
 
       <li>
-        <h3>Test your backups</h3>
-        <p>A backup isn't working until you can prove that it works. Think of the consequences of a backup failing, and plan for this as well.</p>
+        <h3>Roll Forward</h3>
+        <p>If you're building fast, reliable deployment mechanisms, rolling forward is the known, working path of deployment. Rollback mechanisms are another venue for failure that's rarely tested.</p>
       </li>
 
       <li>
@@ -195,14 +178,15 @@ const IndexPage = () => (
       </li>
 
       <li>
-        <h3>Keep Lightweight Architecture Decision Records</h3>
-        <p>Similar to how we use git history to understand the context behind a codebase, architectures decisions are equally crucial. Context is king.</p>
+        <h3>Context is king</h3>
+        <p>Keep a historical record Architecture decisions</p>
+        <p>Similar to how we use git history to understand the context behind a codebase, architectures decisions are equally crucial.</p>
         <p><a href="https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records">https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records</a></p>
       </li>
 
       <li>
-        <h3>Services, not Vendors</h3>
-        <p>Vendor products seldom neatly match the particular requirements of a business, whereas service use can be customised to unique business needs.</p>
+        <h3>prefer Services to Vendors</h3>
+        <p>Vendor products seldom neatly match the particular requirements of a business, whereas a service use can be customised to unique business needs.</p>
       </li>
 
       <li>
@@ -210,11 +194,6 @@ const IndexPage = () => (
         <p>SLAs, SLOs, SLIs, whichever metric you decide on, monitor and adjust behaviour accordingly.</p>
         <p>If a service is too reliable (against agreed measures), hold planned outages to flush out issues in downstream services.</p>
         <p><a href="https://landing.google.com/sre/">https://landing.google.com/sre/</a></p>
-      </li>
-
-      <li>
-        <h3>Write Cloud Native Infrastructure in Cloud Services like AWS</h3>
-        <p><a href="http://shop.oreilly.com/product/0636920075837.do">http://shop.oreilly.com/product/0636920075837.do</a></p>
       </li>
 
       <li>
