@@ -445,6 +445,13 @@ blockquote {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+blockquote:before {
+  display: block;
+  height: 0;
+  content: "“";
+  margin-left: -.5em;
+  font-size: 2em;
+}
 form {
   margin-left: 0;
   margin-right: 0;

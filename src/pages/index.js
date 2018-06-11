@@ -229,7 +229,6 @@ const IndexPage = () => (
         <p><a href="https://apievangelist.com/2012/01/12/the-secret-to-amazons-success-internal-apis/">https://apievangelist.com/2012/01/12/the-secret-to-amazons-success-internal-apis/</a></p>
       </li>
     </ul>
-
   </main>
 )
 
