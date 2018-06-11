@@ -48,6 +48,21 @@ const IndexPage = () => (
       </li>
 
       <li>
+        <h3>Simple over Complex</h3>
+        <blockquote cite="https://en.wikiquote.org/wiki/John_Gall">
+          <p>A complex system that works is invariably found to have evolved from a simple system that worked.</p>
+          <p>A complex system designed from scratch never works and cannot be patched up to make it work.</p>
+          <p>You have to start over, beginning with a working simple system.</p>
+          <cite>John Gall</cite>
+        </blockquote>
+      </li>
+
+      <li>
+        <h3>Infrastructure as Code</h3>
+        <p>Apply the same standards of quality, consistency and repeatability of behaviour to your infrastructure as you do to your code.</p>
+      </li>
+
+      <li>
         <h3>Autonomy vs. Leverage</h3>
         <p>Have an agreed understanding of what areas we're interested in providing autonomy, and what areas of common function we should be leveraging.</p>
         <p><a href="https://svpg.com/autonomy-vs-leverage/">https://svpg.com/autonomy-vs-leverage</a></p>
@@ -72,8 +87,8 @@ const IndexPage = () => (
 
       <li>
         <h3>Bounded Contexts</h3>
+        <p>Build services around <a href="https://martinfowler.com/bliki/BoundedContext.html">Bounded Contexts</a>.</p>
         <p>Deal with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.</p>
-        <p><a href="https://martinfowler.com/bliki/BoundedContext.html">https://martinfowler.com/bliki/BoundedContext.html</a></p>
       </li>
 
       <li>
@@ -100,8 +115,8 @@ const IndexPage = () => (
       </li>
 
       <li>
-        <h3>Confidentiality, integrity and availability</h3>
-        <p>Encryption at Rest, Encryption in Transit (fill in more detail here)</p>
+        <h3>Security at the start</h3>
+        <p>The most expensive security failure is the one that's already happened.</p>
       </li>
 
       <li>
@@ -131,6 +146,12 @@ const IndexPage = () => (
         <p>With a complex system, production cannot be accurately reproduced.</p>
         <p>When relying on Integration testing, every discrepancy from production to the testing environment is an untested venue for failure.</p>
         <p>Contract Testing provides better coverage, see <a href="https://www.destroyallsoftware.com/talks/boundaries">https://www.destroyallsoftware.com/talks/boundaries</a> and <a href="http://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam">http://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam</a></p>
+      </li>
+
+      <li>
+        <h3>Have a standard way of understanding the health and historical behaviour of every system</h3>
+        <p>If you're awoken at 3 AM, all the information you need to diagnose an issue should already have been collected.</p>
+        <p>Collect a record of all steps that needed to be taken to stabilise and resolve the issue, and fix any gaps in data collection. SSH is often a crutch for poor observability of a system.</p>
       </li>
 
       <li>
@@ -179,13 +200,13 @@ const IndexPage = () => (
 
       <li>
         <h3>Context is king</h3>
-        <p>Keep a historical record Architecture decisions</p>
+        <p>Keep a historical record of Architecture decisions.</p>
         <p>Similar to how we use git history to understand the context behind a codebase, architectures decisions are equally crucial.</p>
         <p><a href="https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records">https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records</a></p>
       </li>
 
       <li>
-        <h3>prefer Services to Vendors</h3>
+        <h3>Prefer Services to Vendors</h3>
         <p>Vendor products seldom neatly match the particular requirements of a business, whereas a service use can be customised to unique business needs.</p>
       </li>
 
