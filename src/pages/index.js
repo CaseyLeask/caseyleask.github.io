@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 import './index.css'
 
-import profile from "./profile.jpeg";
+import profile from "./profile_600_converted.jpg";
 
 const IndexPage = () => (
   <main>
