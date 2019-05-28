@@ -98,8 +98,7 @@ const IndexPage = () => (
 
       <li>
         <h3>Trust, but Verify</h3>
-        <p>Don't try to be a gatekeeper, it's the very definition of a bottleneck.</p>
-        <p>Instead, ensure that everyone has the skills, knowledge and tools necessary to release changes in a safe way.</p>
+        <p>Don't try to be a gatekeeper, instead, ensure that everyone has the skills, knowledge and tools necessary to release changes in a safe way.</p>
         <p>Verify with runtime monitoring tools, WAFs and other realtime tooling.</p>
       </li>
 
@@ -213,8 +212,6 @@ const IndexPage = () => (
       <li>
         <h3>Understand the guarantees of reliability every services provides to the business</h3>
         <p>SLAs, SLOs, SLIs, whichever metric you decide on, monitor and adjust behaviour accordingly.</p>
-        <p>If a service is too reliable (against agreed measures), hold planned outages to flush out issues in downstream services.</p>
-        <p><a href="https://landing.google.com/sre/">https://landing.google.com/sre/</a></p>
       </li>
 
       <li>
