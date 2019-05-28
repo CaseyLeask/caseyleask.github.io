@@ -27,7 +27,7 @@ const IndexPage = () => (
         </tr>
         <tr>
           <td>LinkedIn</td>
-          <td><a href="https://www.linkedin.com/in/casey-leask-099aa922/">https://www.linkedin.com/in/casey-leask-099aa922/</a></td>
+          <td><a href="https://www.linkedin.com/in/caseyleask/">caseyleask</a></td>
         </tr>
       </tbody>
     </table>
