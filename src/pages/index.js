@@ -13,7 +13,12 @@ const IndexPage = () => (
           alt="Profile Picture" />
 
       <h1>Hello! My name is Casey Leask.</h1>
-      <h3>I’m looking for a new role as CTO or VP/Head of Engineering (or COO), or similar, remote or in Melbourne.</h3>
+      <h3>I’m looking for a new role as CTO, VP/Head of Engineering, or similar, remote or in Melbourne.</h3>
+      <ul>
+        <li>Proven experience leading teams in highly skilled agile development teams, with a track record of successful delivery in large-scale, commercial software teams.</li>
+        <li>Has experience proposing, building and taking proof of concepts all the way to leading the new business initiatives.</li>
+        <li>Comfortable taking new business initiatives and providing multiple options for solutions that meet development, operational and architectural expectations.</li>
+      </ul>
     </section>
     <table className="socialdeets">
       <tbody>
