@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import Layout from "../components/layout";
 
-import './index.css'
+import './index.css';
 
 import profile from "./profile_600_converted.jpg";
 
@@ -231,6 +232,10 @@ const IndexPage = () => (
       </li>
     </ul>
   </main>
-)
+);
 
-export default IndexPage
+export default props => (
+  <Layout data={props.data}>
+    <IndexPage />
+  </Layout>
+);
