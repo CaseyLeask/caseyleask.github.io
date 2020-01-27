@@ -10,7 +10,7 @@ const IndexPage = () => (
     <section className="about-me">
       <img src={ profile }
           className="profile"
-          alt="Profile Picture" />
+          alt="Profile" />
 
       <h1>Hello! My name is Casey Leask.</h1>
       <h3>I’m looking for a new role as CTO, VP/Head of Engineering, or similar, remote or in Melbourne.</h3>
