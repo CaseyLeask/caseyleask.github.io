@@ -185,9 +185,8 @@ const IndexPage = () => (
       </li>
 
       <li>
-        <h3>Roles, not Access Keys</h3>
-        <p>Roles automatically rotate, and are validated against assuming the permissions.</p>
-        <p>Access Keys are long-lived, with weak validation of the source of where they are used.</p>
+        <h3>Base access on Roles, and assign Individuals to these</h3>
+        <p>Roles automatically rotate, whereas indivudual access Keys are long-lived, with weak validation of the source of where they are used.</p>
         <p>(If someone leaks a Role name on GitHub, you won't be in danger like a leaked Access Key)</p>
       </li>
 
