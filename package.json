@@ -16,7 +16,7 @@
     "deploy": "gatsby build --prefix-paths && echo 'caseyleask.com' > public/CNAME && gh-pages -d public -b master"
   },
   "dependencies": {
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "gatsby": "^2.19.7",
     "gatsby-plugin-react-helmet": "^3.1.6",
     "graphql": "^14.5.4",
